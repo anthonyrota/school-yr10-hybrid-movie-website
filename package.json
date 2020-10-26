@@ -1,0 +1,10 @@
+{
+    "name": "school-yr10-hybrid-movie-website",
+    "scripts": {
+        "start": "browser-sync start --server --watch"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.13",
+        "prettier": "2.1.2"
+    }
+}
