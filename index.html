@@ -56,7 +56,6 @@
             }
 
             .content {
-                background: black;
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -144,7 +143,7 @@
         </aside>
 
         <main class="content">
-            <video controls playsinline class="trailer-video">
+            <video controls playsinline poster="trailer-poster.svg" class="trailer-video">
                 <source src="trailer.mp4" type="video/mp4" />
                 Your browser does not support the video element. Kindly update
                 it to latest version.
@@ -165,9 +164,9 @@
                 bodyScrollLock.disableBodyScroll(menu);
                 requestAnimationFrame(function fixContentHeight() {
                     window.scrollTo(0, 0);
-                    const maxHeightStyle = `${window.innerHeight - 60}px`;
+                    var maxHeightStyle = (window.innerHeight - 60) + 'px';
                     content.style.maxHeight = maxHeightStyle;
-                    content.style.maxHeight = maxHeightStyle;
+                    menu.style.maxHeight = maxHeightStyle;
                     requestAnimationFrame(fixContentHeight);
                 });
             })();
