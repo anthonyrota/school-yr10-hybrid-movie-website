@@ -23,6 +23,25 @@
             sizes="16x16"
         />
         <link rel="stylesheet" href="style.css" />
+        <style>
+            .responsive-table-sm {
+                display: none !important;
+            }
+
+            .responsive-table-sm__heading-column {
+                width: 40%;
+            }
+
+            @media screen and (max-width: 720px) {
+                .responsive-table-lg {
+                    display: none !important;
+                }
+
+                .responsive-table-sm {
+                    display: table !important;
+                }
+            }
+        </style>
     </head>
 
     <body>
@@ -42,13 +61,14 @@
                             <a
                                 href="about.html"
                                 class="nav__link nav__link--active"
-                                >About</a
                             >
+                                About
+                            </a>
                         </li>
                         <li>
-                            <a href="tickets.html" class="nav__link"
-                                >Buy Tickets</a
-                            >
+                            <a href="tickets.html" class="nav__link">
+                                Buy Tickets
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -84,46 +104,514 @@
                 <li><a href="index.html" class="nav__link">Home</a></li>
                 <li><a href="poster.html" class="nav__link">Poster</a></li>
                 <li>
-                    <a href="about.html" class="nav__link nav__link--active"
-                        >About</a
-                    >
+                    <a href="about.html" class="nav__link nav__link--active">
+                        About
+                    </a>
                 </li>
                 <li>
-                    <a href="tickets.html" class="nav__link">Buy Tickets</a>
+                    <a href="tickets.html" class="nav__link"> Buy Tickets </a>
                 </li>
             </ul>
         </aside>
 
         <main class="content">
             <div class="content__inner">
-                <h1>Trailer Planning Documentation</h1>
-                <p>There were several films used in the trailer.</p>
+                <h1>About</h1>
+                <p>
+                    The legendary Totoro has risen from the dead. Fearing that
+                    the actions of Superman are left unchecked, Totoro takes him
+                    on. Will he be able to stop the Man of Steel?
+                </p>
+                <dl>
+                    <dt>Director</dt>
+                    <dd>Anthony Rota</dd>
+                    <dt>Writer</dt>
+                    <dd>Anthony Rota</dd>
+                    <dt>Stars</dt>
+                    <dd>Anthony Rota, Anthony Harrison Rota, Rota Anthony</dd>
+                </dl>
+                <h2>Films Used</h2>
                 <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Genre</th>
-                        <th>Director / Publisher</th>
-                    </tr>
-                    <tr>
-                        <td>The Batman</td>
-                        <td>Drama/Crime</td>
-                        <td>Matt Reeves</td>
-                    </tr>
-                    <tr>
-                        <td>The Dark Knight</td>
-                        <td>Action/Adventure</td>
-                        <td>Christopher Nolan</td>
-                    </tr>
-                    <tr>
-                        <td>My Neighbor Totoro</td>
-                        <td>Animation/Fantasy</td>
-                        <td>Hayao Miyazaki</td>
-                    </tr>
-                    <tr>
-                        <td>Batman vs Superman</td>
-                        <td>Action/Adventure</td>
-                        <td>Zack Snyder</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Genre</th>
+                            <th>Director / Publisher</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The Batman</td>
+                            <td>Drama / Crime</td>
+                            <td>Matt Reeves</td>
+                        </tr>
+                        <tr>
+                            <td>The Dark Knight</td>
+                            <td>Action / Adventure</td>
+                            <td>Christopher Nolan</td>
+                        </tr>
+                        <tr>
+                            <td>My Neighbor Totoro</td>
+                            <td>Animation / Fantasy</td>
+                            <td>Hayao Miyazaki</td>
+                        </tr>
+                        <tr>
+                            <td>Batman vs Superman</td>
+                            <td>Action / Adventure</td>
+                            <td>Zack Snyder</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Common Elements / Themes</h2>
+                <p>
+                    All of the selected films are adventure/fantasy films,
+                    meaning they have common themes of mystery and exploring.
+                    The clips I have selected all had a general dark and gloomy
+                    mood to them, with the lighting being dark and the music
+                    being ominous. Although the characters look vastly
+                    different, this common lighting and similar sound clips used
+                    allows the clips to smoothly merge together in order to make
+                    a single cohesive trailer. Furthermore, many of the clips
+                    used from all of the movies listed contain scenes of the
+                    characters either training or fighting, which is a common
+                    element that further allows for a smooth blending of the
+                    clips to make a cohesive project. As well as this, many of
+                    the consecutive clips contain similar themes, for example
+                    the combination of entrance clips at the end, and the
+                    combination of funeral/sad scenes in the middle. This usage
+                    of adjacent clips with similar themes (setting, music, etc.)
+                    further improves how well the clips go together allowing for
+                    an overall more cohesive project.
+                </p>
+                <h2>References</h2>
+                <table class="responsive-table-lg">
+                    <thead>
+                        <tr>
+                            <th>Movie Title</th>
+                            <th>Clip Title</th>
+                            <th>Original Source Clip</th>
+                            <th>Original Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Batman vs Superman</td>
+                            <td>Funeral Scene</td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=Gj1F7q49cmY"
+                                >
+                                    https://www.youtube.com/watch?v=Gj1F7q49cmY
+                                </a>
+                            </td>
+                            <td>1.59m - 2.09m</td>
+                        </tr>
+                        <tr>
+                            <td>My Neighbor Totoro</td>
+                            <td>Official Trailer</td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=92a7Hj0ijLs"
+                                >
+                                    https://www.youtube.com/watch?v=92a7Hj0ijLs
+                                </a>
+                            </td>
+                            <td>
+                                <p>7s - 12s</p>
+                                <p>15s - 19s</p>
+                                <p>30s - 35s</p>
+                                <p>42s - 43s</p>
+                                <p>48s - 54s</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Batman vs Superman</td>
+                            <td>Official Final Trailer</td>
+                            <td>
+                                <a
+                                    href="https://youtube.com/watch?v=NhWg7AQLI_8"
+                                >
+                                    https://youtube.com/watch?v=NhWg7AQLI_8
+                                </a>
+                            </td>
+                            <td>
+                                <p>2s - 4s</p>
+                                <p>4s - 7s</p>
+                                <p>12s - 17s</p>
+                                <p>23s - 25s</p>
+                                <p>26s - 28s</p>
+                                <p>30s - 32s</p>
+                                <p>34s - 37s</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>The Dark Knight Rises</td>
+                            <td>Bruce Wayne's Funeral</td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=aQo0xqhVXb8"
+                                >
+                                    https://www.youtube.com/watch?v=aQo0xqhVXb8
+                                </a>
+                            </td>
+                            <td>
+                                <p>55s - 59s</p>
+                                <p>1:03m - 1:06m</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Batman vs Superman</td>
+                            <td>Batman's First Appearance</td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=9lJvEiDiPcE"
+                                >
+                                    https://www.youtube.com/watch?v=9lJvEiDiPcE
+                                </a>
+                            </td>
+                            <td>
+                                <p>2:19m - 2:22m</p>
+                                <p>2:29m - 2:32m</p>
+                                <p>2:35m - 2:36m</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>The Batman</td>
+                            <td>Release Trailer</td>
+                            <td>
+                                <a href="https://youtu.be/NLOp_6uPccQ">
+                                    https://youtu.be/NLOp_6uPccQ
+                                </a>
+                            </td>
+                            <td>
+                                <p>0s - 9s</p>
+                                <p>54s - 57s</p>
+                                <p>1:33m - 1:43m</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Batman vs Superman</td>
+                            <td>Batman vs Superman First Fight</td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=X7SiuQxhAjg"
+                                >
+                                    https://www.youtube.com/watch?v=X7SiuQxhAjg
+                                </a>
+                            </td>
+                            <td>11s - 13s</td>
+                        </tr>
+                        <tr>
+                            <td>Batman vs Superman</td>
+                            <td>Car Chase Confrontation</td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=lPc9bJrr-KA"
+                                >
+                                    https://www.youtube.com/watch?v=lPc9bJrr-KA
+                                </a>
+                            </td>
+                            <td>
+                                <p>3:46m - 3:48m</p>
+                                <p>3:49m - 3:56m</p>
+                                <p>3:58m - 4:00m</p>
+                                <p>4:16m - 4:19m</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="responsive-table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Movie Title</strong>
+                            </td>
+                            <td>Batman vs Superman</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Clip Title</strong>
+                            </td>
+                            <td>Funeral Scene</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Source Clip</strong>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=Gj1F7q49cmY"
+                                    >https://www.youtube.com/watch?v=Gj1F7q49cmY</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Timing</strong>
+                            </td>
+                            <td>1.59m - 2.09m</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="responsive-table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Movie Title</strong>
+                            </td>
+                            <td>My Neighbor Totoro</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Clip Title</strong>
+                            </td>
+                            <td>Official Trailer</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Source Clip</strong>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=92a7Hj0ijLs"
+                                    >https://www.youtube.com/watch?v=92a7Hj0ijLs</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Timing</strong>
+                            </td>
+                            <td>
+                                <p>7s - 12s</p>
+                                <p>15s - 19s</p>
+                                <p>30s - 35s</p>
+                                <p>42s - 43s</p>
+                                <p>48s - 54s</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="responsive-table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Movie Title</strong>
+                            </td>
+                            <td>Batman vs Superman</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Clip Title</strong>
+                            </td>
+                            <td>Official Final Trailer</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Source Clip</strong>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://youtube.com/watch?v=NhWg7AQLI_8"
+                                    >https://youtube.com/watch?v=NhWg7AQLI_8</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Timing</strong>
+                            </td>
+                            <td>
+                                <p>2s - 4s</p>
+                                <p>4s - 7s</p>
+                                <p>12s - 17s</p>
+                                <p>23s - 25s</p>
+                                <p>26s - 28s</p>
+                                <p>30s - 32s</p>
+                                <p>34s - 37s</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="responsive-table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Movie Title</strong>
+                            </td>
+                            <td>The Dark Knight Rises</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Clip Title</strong>
+                            </td>
+                            <td>Bruce Wayne's Funeral</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Source Clip</strong>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=aQo0xqhVXb8"
+                                    >https://www.youtube.com/watch?v=aQo0xqhVXb8</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Timing</strong>
+                            </td>
+                            <td>
+                                <p>55s - 59s</p>
+                                <p>1:03m - 1:06m</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="responsive-table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Movie Title</strong>
+                            </td>
+                            <td>Batman vs Superman</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Clip Title</strong>
+                            </td>
+                            <td>Batman's First Appearance</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Source Clip</strong>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=9lJvEiDiPcE"
+                                    >https://www.youtube.com/watch?v=9lJvEiDiPcE</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Timing</strong>
+                            </td>
+                            <td>
+                                <p>2:19m - 2:22m</p>
+                                <p>2:29m - 2:32m</p>
+                                <p>2:35m - 2:36m</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="responsive-table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Movie Title</strong>
+                            </td>
+                            <td>The Batman</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Clip Title</strong>
+                            </td>
+                            <td>Release Trailer</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Source Clip</strong>
+                            </td>
+                            <td>
+                                <a href="https://youtu.be/NLOp_6uPccQ"
+                                    >https://youtu.be/NLOp_6uPccQ</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Timing</strong>
+                            </td>
+                            <td>
+                                <p>0s - 9s</p>
+                                <p>54s - 57s</p>
+                                <p>1:33m - 1:43m</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="responsive-table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Movie Title</strong>
+                            </td>
+                            <td>Batman vs Superman</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Clip Title</strong>
+                            </td>
+                            <td>Batman vs Superman First Fight</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Source Clip</strong>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=X7SiuQxhAjg"
+                                    >https://www.youtube.com/watch?v=X7SiuQxhAjg</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Timing</strong>
+                            </td>
+                            <td>11s - 13s</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="responsive-table-sm">
+                    <tbody>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Movie Title</strong>
+                            </td>
+                            <td>Batman vs Superman</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Clip Title</strong>
+                            </td>
+                            <td>Car Chase Confrontation</td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Source Clip</strong>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://www.youtube.com/watch?v=lPc9bJrr-KA"
+                                    >https://www.youtube.com/watch?v=lPc9bJrr-KA</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="responsive-table-sm__heading-column">
+                                <strong>Original Timing</strong>
+                            </td>
+                            <td>
+                                <p>3:46m - 3:48m</p>
+                                <p>3:49m - 3:56m</p>
+                                <p>3:58m - 4:00m</p>
+                                <p>4:16m - 4:19m</p>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </main>

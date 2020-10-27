@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     var toggleMenuButton = document.querySelector('.header__hamburger');
@@ -7,7 +7,7 @@
     var toggleMenuButtonOpenClass = 'header__hamburger--open';
     var menuContainerOpenClass = 'menu--open';
 
-    toggleMenuButton.addEventListener('click', function() {
+    toggleMenuButton.addEventListener('click', function () {
         var method = isMenuOpen ? 'remove' : 'add';
         isMenuOpen = !isMenuOpen;
         toggleMenuButton.classList[method](toggleMenuButtonOpenClass);

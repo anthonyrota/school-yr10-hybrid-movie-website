@@ -84,8 +84,9 @@
                             <a
                                 href="index.html"
                                 class="nav__link nav__link--active"
-                                >Home</a
                             >
+                                Home
+                            </a>
                         </li>
                         <li>
                             <a href="poster.html" class="nav__link">Poster</a>
@@ -94,9 +95,9 @@
                             <a href="about.html" class="nav__link">About</a>
                         </li>
                         <li>
-                            <a href="tickets.html" class="nav__link"
-                                >Buy Tickets</a
-                            >
+                            <a href="tickets.html" class="nav__link">
+                                Buy Tickets
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -130,9 +131,9 @@
         <aside class="menu">
             <ul>
                 <li>
-                    <a href="index.html" class="nav__link nav__link--active"
-                        >Home</a
-                    >
+                    <a href="index.html" class="nav__link nav__link--active">
+                        Home
+                    </a>
                 </li>
                 <li><a href="poster.html" class="nav__link">Poster</a></li>
                 <li><a href="about.html" class="nav__link">About</a></li>
@@ -143,7 +144,13 @@
         </aside>
 
         <main class="content">
-            <video controls playsinline poster="trailer-poster.svg" class="trailer-video">
+            <video
+                controls
+                playsinline
+                preload="metadata"
+                poster="trailer-poster.svg"
+                class="trailer-video"
+            >
                 <source src="trailer.mp4" type="video/mp4" />
                 Your browser does not support the video element. Kindly update
                 it to latest version.
@@ -164,7 +171,7 @@
                 bodyScrollLock.disableBodyScroll(menu);
                 requestAnimationFrame(function fixContentHeight() {
                     window.scrollTo(0, 0);
-                    var maxHeightStyle = (window.innerHeight - 60) + 'px';
+                    var maxHeightStyle = window.innerHeight - 60 + 'px';
                     content.style.maxHeight = maxHeightStyle;
                     menu.style.maxHeight = maxHeightStyle;
                     requestAnimationFrame(fixContentHeight);

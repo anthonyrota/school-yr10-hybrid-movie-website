@@ -166,10 +166,6 @@ section {
 body {
     line-height: 1;
 }
-ol,
-ul {
-    list-style: none;
-}
 blockquote,
 q {
     quotes: none;
@@ -228,7 +224,7 @@ button {
 
 ::-webkit-scrollbar {
     width: 8px;
-    height: 3px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-button {
@@ -557,6 +553,14 @@ html {
 
 .content {
     width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+    word-wrap: break-word;
 }
 
 .content__inner {
@@ -567,4 +571,123 @@ html {
     height: 100%;
     padding: 20px;
     color: #fff;
+}
+
+.content strong {
+    font-weight: inherit;
+    font-weight: bolder;
+    font-weight: 600;
+}
+
+.content a {
+    color: #0366d6;
+    text-decoration: none;
+    background-color: initial;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content a:active,
+.content a:hover {
+    outline-width: 0;
+}
+
+.content h1 {
+    margin: 0.67em 0;
+    font-size: 2em;
+}
+
+.content h2 {
+    font-size: 1.5em;
+}
+
+.content h1,
+.content h2 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+}
+
+.content p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content dd {
+    margin-left: 0;
+}
+
+.content dl {
+    padding: 0;
+}
+
+.content dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.content dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+.content > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.content > :last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.content img {
+    border-style: none;
+}
+
+.content dl,
+.content p,
+.content table {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.content table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.content table th {
+    font-weight: 600;
+}
+
+.content table td,
+.content table th {
+    padding: 6px 13px;
+    border: 1px solid #201d1a;
+}
+
+.content table tr {
+    background-color: #000;
+    border-top: 1px solid #39342e;
+}
+
+.content table tr:nth-child(2n) {
+    background-color: #090705;
 }

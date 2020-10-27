@@ -23,6 +23,35 @@
             sizes="16x16"
         />
         <link rel="stylesheet" href="style.css" />
+        <style>
+            .content blockquote,
+            .content ul {
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
+
+            .content blockquote {
+                padding: 0 1em;
+                border-left: 0.25em solid #eaecef;
+            }
+
+            .content ul {
+                padding-left: 2em;
+                margin-top: 0;
+            }
+
+            .content li {
+                word-wrap: break-all;
+            }
+
+            .content li > p {
+                margin-top: 16px;
+            }
+
+            .content li + li {
+                margin-top: 0.25em;
+            }
+        </style>
     </head>
 
     <body>
@@ -45,8 +74,9 @@
                             <a
                                 href="tickets.html"
                                 class="nav__link nav__link--active"
-                                >Buy Tickets</a
                             >
+                                Buy Tickets
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -83,15 +113,41 @@
                 <li><a href="poster.html" class="nav__link">Poster</a></li>
                 <li><a href="about.html" class="nav__link">About</a></li>
                 <li>
-                    <a href="tickets.html" class="nav__link nav__link--active"
-                        >Buy Tickets</a
-                    >
+                    <a href="tickets.html" class="nav__link nav__link--active">
+                        Buy Tickets
+                    </a>
                 </li>
             </ul>
         </aside>
 
         <main class="content">
-            <div class="content__inner"></div>
+            <div class="content__inner">
+                <h1>Watch the Movie</h1>
+                <p>Tickets are available at the following Cinemas.</p>
+                <blockquote>
+                    <strong>NOTE:</strong> This list is limited due to COVID-19
+                    restrictions and social distancing behavior.
+                </blockquote>
+                <ul>
+                    <li>HOYTS (Various Locations)</li>
+                    <li>Event Cinemas (Various Locations)</li>
+                    <li>Palace Cinemas (Various Locations)</li>
+                    <li>Dendy Cinemas Newtown</li>
+                </ul>
+                <h2>Online Streaming</h2>
+                <p>The movie is available on the following online services.</p>
+                <ul>
+                    <li>Hulu</li>
+                    <li>Netflix</li>
+                    <li>Stan</li>
+                    <li>Amazon Prime Video</li>
+                </ul>
+                <p>
+                    Alternatively, you can also buy or rent the movie online
+                    through Google Play, Amazon Prime Video, iTunes Movie
+                    Rentals and/or YouTube Movies.
+                </p>
+            </div>
         </main>
 
         <script src="script.js"></script>
