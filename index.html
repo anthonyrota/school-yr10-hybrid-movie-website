@@ -171,7 +171,13 @@
                 bodyScrollLock.disableBodyScroll(menu);
                 requestAnimationFrame(function fixContentHeight() {
                     window.scrollTo(0, 0);
-                    var maxHeightStyle = window.innerHeight - 60 + 'px';
+                    var maxHeightStyle =
+                        Math.max(
+                            document.documentElement.clientHeight,
+                            window.innerHeight || 0,
+                        ) -
+                        60 +
+                        'px';
                     content.style.maxHeight = maxHeightStyle;
                     menu.style.maxHeight = maxHeightStyle;
                     requestAnimationFrame(fixContentHeight);

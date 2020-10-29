@@ -24,7 +24,6 @@
         />
         <link rel="stylesheet" href="style.css" />
         <style>
-            
             html {
                 height: 100%;
                 overflow-y: hidden;
@@ -141,7 +140,11 @@
         </aside>
 
         <main class="content">
-            <img class="poster-image" src="poster.png" alt="Totoro vs Batman Movie Poster" />
+            <img
+                class="poster-image"
+                src="poster.png"
+                alt="Totoro vs Batman Movie Poster"
+            />
         </main>
 
         <script src="script.js"></script>
@@ -158,7 +161,13 @@
                 bodyScrollLock.disableBodyScroll(menu);
                 requestAnimationFrame(function fixContentHeight() {
                     window.scrollTo(0, 0);
-                    var maxHeightStyle = window.innerHeight - 60 + 'px';
+                    var maxHeightStyle =
+                        Math.max(
+                            document.documentElement.clientHeight,
+                            window.innerHeight || 0,
+                        ) -
+                        60 +
+                        'px';
                     content.style.maxHeight = maxHeightStyle;
                     menu.style.maxHeight = maxHeightStyle;
                     requestAnimationFrame(fixContentHeight);
