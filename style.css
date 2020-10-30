@@ -324,6 +324,12 @@ html {
     opacity: 0.8;
 }
 
+@media screen and (max-width: 300px) {
+    .header__movie-name__text {
+        display: none;
+    }
+}
+
 .header__nav {
     height: 100%;
 }
